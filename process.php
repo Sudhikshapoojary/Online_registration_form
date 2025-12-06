@@ -4,7 +4,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $email = htmlspecialchars($_POST['email']);
     $phone = htmlspecialchars($_POST['phone']);
     $gender = htmlspecialchars($_POST['gender']);
-    $password = htmlspecialchars($_POST['password']); // For demo only, don't store plaintext passwords!
+    $password = htmlspecialchars($_POST['password']);
 
     echo "<h3>Registration Successful!</h3>";
     echo "<p><strong>Name:</strong> $name</p>";
@@ -12,4 +12,5 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     echo "<p><strong>Phone:</strong> $phone</p>";
     echo "<p><strong>Gender:</strong> $gender</p>";
 }
+
 ?>
